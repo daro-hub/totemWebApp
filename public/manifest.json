@@ -1,0 +1,21 @@
+{
+  "name": "AmuseApp - Museum Totem",
+  "short_name": "AmuseApp",
+  "description": "Museum ticket purchasing system",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "icons": [
+    {
+      "src": "/logo_amuseapp.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["entertainment", "travel"],
+  "lang": "en",
+  "dir": "ltr"
+}

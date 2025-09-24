@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS per il carosello QR con effetto profondità */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.qr-carousel-container {
+  transform-style: preserve-3d;
+}
+
+.qr-card {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Effetto mazzo di carte */
+.qr-card-stack {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.qr-card-stack .qr-card:nth-child(1) {
+  transform: translateZ(0px) rotateY(0deg);
+  z-index: 10;
+}
+
+.qr-card-stack .qr-card:nth-child(2) {
+  transform: translateZ(-20px) rotateY(15deg) translateX(20px);
+  z-index: 9;
+  opacity: 0.9;
+}
+
+.qr-card-stack .qr-card:nth-child(3) {
+  transform: translateZ(-40px) rotateY(30deg) translateX(40px);
+  z-index: 8;
+  opacity: 0.8;
+}
+
+.qr-card-stack .qr-card:nth-child(4) {
+  transform: translateZ(-60px) rotateY(45deg) translateX(60px);
+  z-index: 7;
+  opacity: 0.7;
+}
+
+.qr-card-stack .qr-card:nth-child(5) {
+  transform: translateZ(-80px) rotateY(60deg) translateX(80px);
+  z-index: 6;
+  opacity: 0.6;
+}
+
+/* Animazioni fluide */
+.qr-card-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Effetto hover */
+.qr-card:hover {
+  transform: translateZ(10px) scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive per tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .qr-carousel-container {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .qr-card {
+    width: 280px;
+    height: 300px;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --primary: 176 100% 21%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 9%;
+    --accent-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 176 100% 21%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for tablet vertical orientation */
+@media (orientation: portrait) {
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Prevent zoom on input focus for iOS */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Custom scrollbar for carousel */
+.custom-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
