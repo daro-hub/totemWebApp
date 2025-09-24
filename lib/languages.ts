@@ -84,7 +84,7 @@ export const languageToCountryCode = {
 
 // Funzione per ottenere il codice paese da un codice lingua
 export function getCountryCodeFromLanguage(langCode: string): string {
-  let countryCode = languageToCountryCode[langCode.toLowerCase()]
+  let countryCode = languageToCountryCode[langCode.toLowerCase() as keyof typeof languageToCountryCode]
   
   if (!countryCode) {
     // Prova varianti del codice
@@ -95,8 +95,8 @@ export function getCountryCodeFromLanguage(langCode: string): string {
     ]
     
     for (const variant of langVariants) {
-      if (languageToCountryCode[variant]) {
-        countryCode = languageToCountryCode[variant]
+      if (languageToCountryCode[variant as keyof typeof languageToCountryCode]) {
+        countryCode = languageToCountryCode[variant as keyof typeof languageToCountryCode]
         break
       }
     }

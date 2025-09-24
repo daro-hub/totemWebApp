@@ -176,9 +176,12 @@ export const translations: Record<string, Translations> = {
     proceed: 'Prosseguir',
     thankYou: 'Obrigado pela sua compra!',
     scanQR: 'Escaneie os códigos QR e aproveite sua visita!',
+    ticket: 'Ingresso',
     newPurchase: 'Nova Compra',
     enterEmail: 'Digite seu email para receber o recibo',
     emailPlaceholder: 'seu.email@exemplo.com',
+    sendEmail: 'Enviar Email',
+    autoReturn: 'Retorno automático em:',
     museumIdDialog: {
       title: 'Alterar ID Museu',
       description: 'Digite um novo ID Museu para se conectar a um museu diferente',
@@ -402,30 +405,6 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Museum ID',
       confirm: 'Bekräfta',
       cancel: 'Avbryt'
-    }
-  },
-  pt: {
-    selectLanguage: 'Selecione seu idioma',
-    selectQuantity: 'Selecionar quantidade',
-    howManyTickets: 'Quantos ingressos você quer comprar?',
-    paymentConfirmation: 'Confirmação de Pagamento',
-    reviewOrder: 'Revise os detalhes do seu pedido antes de prosseguir com o pagamento',
-    quantity: 'Quantidade',
-    total: 'Total',
-    payNow: 'Pagar Agora',
-    back: 'Voltar',
-    proceed: 'Prosseguir',
-    thankYou: 'Obrigado pela sua compra!',
-    scanQR: 'Escaneie os códigos QR e aproveite sua visita!',
-    newPurchase: 'Nova Compra',
-    enterEmail: 'Digite seu email para receber o recibo',
-    emailPlaceholder: 'seu.email@exemplo.com',
-    museumIdDialog: {
-      title: 'Alterar ID Museu',
-      description: 'Digite um novo ID Museu para se conectar a um museu diferente',
-      placeholder: 'ID Museu',
-      confirm: 'Confirmar',
-      cancel: 'Cancelar'
     }
   },
   sk: {
