@@ -27,11 +27,11 @@ export function PageLayout({
 
       {/* Title and Subtitle */}
       <div className="text-center mb-8 px-4">
-        <h1 className="text-4xl font-bold text-white mb-2">
+        <h1 className="text-6xl font-bold text-white mb-4">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-white text-lg">
+          <p className="text-white text-2xl">
             {subtitle}
           </p>
         )}
@@ -44,7 +44,7 @@ export function PageLayout({
 
       {/* Navigation */}
       {navigation && (
-        <div className="px-4 pb-6">
+        <div className="px-4 pb-6 flex justify-center">
           {navigation}
         </div>
       )}

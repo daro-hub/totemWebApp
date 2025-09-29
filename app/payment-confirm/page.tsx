@@ -38,7 +38,7 @@ export default function PaymentConfirmPage() {
         <div className="w-full max-w-md space-y-4">
           <Button
             onClick={handlePayNow}
-            className="w-full h-14 text-lg font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
+            className="w-full h-16 text-xl font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
           >
             {translations.payNow}
           </Button>
@@ -46,7 +46,7 @@ export default function PaymentConfirmPage() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="w-full h-14 text-lg font-semibold border-2 border-white bg-black hover:bg-white/10 text-white rounded-lg"
+            className="w-full h-16 text-xl font-semibold border-2 border-white bg-black hover:bg-white/10 text-white rounded-lg"
           >
             {translations.back}
           </Button>
@@ -62,10 +62,10 @@ export default function PaymentConfirmPage() {
 
         {/* Order Info */}
         <div className="text-left">
-          <div className="text-2xl font-bold text-white mb-1">
+          <div className="text-3xl font-bold text-white mb-2">
             {translations.quantity}: {ticketQuantity}
           </div>
-          <div className="text-xl font-bold text-white">
+          <div className="text-2xl font-bold text-white">
             {translations.total}: €{totalPrice}
           </div>
         </div>

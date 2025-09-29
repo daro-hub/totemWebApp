@@ -26,7 +26,7 @@ function LanguageButton({ language, onClick }: LanguageButtonProps) {
   return (
     <Button
       variant="outline"
-      className="w-full h-32 p-0 bg-white/5 border-white/20 hover:bg-white/10 transition-all duration-200 relative overflow-hidden"
+      className="w-full h-40 p-0 bg-white/5 border-white/20 hover:bg-white/10 transition-all duration-200 relative overflow-hidden"
       onClick={onClick}
     >
       {/* Bandiera di sfondo */}
@@ -41,7 +41,7 @@ function LanguageButton({ language, onClick }: LanguageButtonProps) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       
       {/* Nome della lingua in sovraimpressione nella parte bassa */}
-      <span className="absolute bottom-3 left-0 right-0 text-white text-lg font-bold text-center px-2 z-10">
+      <span className="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center px-2 z-10">
         {language.name}
       </span>
     </Button>
@@ -136,14 +136,14 @@ export function LanguageSelector() {
       >
         {/* Loading State */}
         {isLoading && (
-          <div className="text-white text-center text-xl">
+          <div className="text-white text-center text-2xl">
             Loading museum data...
           </div>
         )}
 
         {/* Error State */}
         {error && (
-          <div className="text-red-400 text-center mb-4 text-xl">
+          <div className="text-red-400 text-center mb-4 text-2xl">
             {error}
           </div>
         )}

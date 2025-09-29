@@ -97,7 +97,7 @@ export default function ThankYouPage() {
             {/* Timer - only show on last ticket */}
             {hasSeenLastTicket && (
               <div className="text-center">
-                <div className="text-white text-lg mb-2">
+                <div className="text-white text-xl mb-2">
                   {translations.autoReturn} {timeLeft}s
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function ThankYouPage() {
             {/* New Purchase Button */}
             <Button
               onClick={handleNewPurchase}
-              className="w-full h-12 text-lg font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
+              className="w-full h-16 text-xl font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
             >
               {translations.newPurchase}
             </Button>
@@ -125,7 +125,7 @@ export default function ThankYouPage() {
         <div className="w-full max-w-md mb-6">
           <form onSubmit={handleEmailSubmit} className="space-y-4">
             <div>
-              <label className="block text-white text-sm font-medium mb-2">
+              <label className="block text-white text-lg font-medium mb-2">
                 {translations.enterEmail}
               </label>
               <Input
@@ -133,13 +133,13 @@ export default function ThankYouPage() {
                 placeholder={translations.emailPlaceholder}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full"
+                className="w-full h-12 text-lg"
               />
             </div>
             <Button
               type="submit"
               variant="outline"
-              className="w-full border-white text-white hover:bg-white/10"
+              className="w-full h-12 text-lg border-white text-white hover:bg-white/10"
             >
               {translations.sendEmail}
             </Button>

@@ -39,7 +39,7 @@ export default function QuantitySelectorPage() {
         <div className="w-full max-w-md space-y-4">
           <Button
             onClick={handleProceed}
-            className="w-full h-14 text-lg font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
+            className="w-full h-16 text-xl font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
           >
             {translations.proceed}
           </Button>
@@ -47,7 +47,7 @@ export default function QuantitySelectorPage() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="w-full h-14 text-lg font-semibold border-2 border-white bg-black hover:bg-white/10 text-white rounded-lg"
+            className="w-full h-16 text-xl font-semibold border-2 border-white bg-black hover:bg-white/10 text-white rounded-lg"
           >
             {translations.back}
           </Button>
@@ -68,7 +68,7 @@ export default function QuantitySelectorPage() {
         </Button>
 
         {/* Quantity Display */}
-        <div className="text-6xl font-bold text-white min-w-[120px] text-center">
+        <div className="text-8xl font-bold text-white min-w-[160px] text-center">
           {ticketQuantity}
         </div>
 
