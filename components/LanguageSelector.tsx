@@ -132,7 +132,7 @@ export function LanguageSelector() {
 
       <PageLayout
         title={translations.selectLanguage}
-        subtitle={translations.selectLanguageSubtitle || 'Choose your preferred language'}
+        subtitle="Choose your preferred language"
       >
         {/* Loading State */}
         {isLoading && (
