@@ -29,12 +29,12 @@ function LanguageButton({ language, onClick }: LanguageButtonProps) {
       className="w-full bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg transition-all duration-200 overflow-hidden"
     >
       {/* Bandiera in alto */}
-      <div className="relative w-full h-40 rounded-xl overflow-hidden">
+      <div className="relative w-full h-40 overflow-hidden">
         <img
           src={flagUrls.flagUrl}
           srcSet={`${flagUrls.flagUrl2x} 2x, ${flagUrls.flagUrl3x} 3x`}
           alt={`${language.name} flag`}
-          className="w-full h-full rounded-lg object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
       
