@@ -69,8 +69,15 @@ export default function ThankYouPage() {
     router.push('/')
   }
 
+  // Email validation function
+  const isValidEmail = (email: string) => {
+    const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/
+    return emailRegex.test(email)
+  }
+
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    if (!isValidEmail(email)) return
     // In a real app, this would send the email with tickets
     console.log('Sending email to:', email)
     // Show success message or handle error
@@ -117,7 +124,7 @@ export default function ThankYouPage() {
         }
       >
         {/* QR Code Carousel */}
-        <div className="mb-8">
+        <div className="mb-4">
           <QRCodeCarousel 
             onTicketsGenerated={handleTicketsGenerated}
             onTicketIndexChange={handleTicketIndexChange}
@@ -139,13 +146,15 @@ export default function ThankYouPage() {
                 className="w-full h-12 text-lg"
               />
             </div>
-            <Button
-              type="submit"
-              variant="outline"
-              className="w-full h-12 text-lg border-white text-white hover:bg-white/10"
-            >
-              {translations.sendEmail}
-            </Button>
+            {isValidEmail(email) && (
+              <Button
+                type="submit"
+                variant="outline"
+                className="w-full h-12 text-lg border-white text-white hover:bg-white/10"
+              >
+                {translations.sendEmail}
+              </Button>
+            )}
           </form>
         </div>
       </PageLayout>

@@ -26,7 +26,7 @@ export function PageLayout({
       </div>
 
       {/* Title and Subtitle */}
-      <div className="text-center mb-8 px-4">
+      <div className="text-center mb-4 px-4">
         <h1 className="text-6xl font-bold text-white mb-4">
           {title}
         </h1>

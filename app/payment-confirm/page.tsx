@@ -54,7 +54,7 @@ export default function PaymentConfirmPage() {
       }
     >
       {/* Order Details */}
-      <div className="flex flex-col items-center justify-center gap-8 mb-12">
+      <div className="flex flex-col items-center justify-center gap-0 mb-12">
         {/* Order Icon */}
         <div className="w-32 h-32 flex items-center justify-center">
           <Ticket className="w-24 h-24 text-white" />
