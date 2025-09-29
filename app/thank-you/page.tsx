@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Logo } from '@/components/Logo'
 import { QRCodeCarousel } from '@/components/QRCodeCarousel'
+import { PageLayout } from '@/components/PageLayout'
 
 export default function ThankYouPage() {
   const router = useRouter()
@@ -85,26 +86,33 @@ export default function ThankYouPage() {
 
   return (
     <div 
-      className="min-h-screen bg-black flex flex-col"
       onTouchStart={handleScreenTouch}
       onClick={handleScreenTouch}
     >
-      {/* Header with Logo */}
-      <div className="flex flex-col items-center pt-4 pb-2">
-        <Logo />
-      </div>
+      <PageLayout
+        title={translations.thankYou}
+        subtitle={translations.scanQR}
+        navigation={
+          <div className="w-full max-w-md space-y-4">
+            {/* Timer - only show on last ticket */}
+            {hasSeenLastTicket && (
+              <div className="text-center">
+                <div className="text-white text-lg mb-2">
+                  {translations.autoReturn} {timeLeft}s
+                </div>
+              </div>
+            )}
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-8">
-        <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-white mb-2">
-            {translations.thankYou}
-          </h1>
-          <p className="text-white text-lg">
-            {translations.scanQR}
-          </p>
-        </div>
-
+            {/* New Purchase Button */}
+            <Button
+              onClick={handleNewPurchase}
+              className="w-full h-12 text-lg font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
+            >
+              {translations.newPurchase}
+            </Button>
+          </div>
+        }
+      >
         {/* QR Code Carousel */}
         <div className="mb-8">
           <QRCodeCarousel 
@@ -112,7 +120,6 @@ export default function ThankYouPage() {
             onTicketIndexChange={handleTicketIndexChange}
           />
         </div>
-
 
         {/* Email Input */}
         <div className="w-full max-w-md mb-6">
@@ -138,27 +145,7 @@ export default function ThankYouPage() {
             </Button>
           </form>
         </div>
-
-        {/* Timer and New Purchase Button */}
-        <div className="w-full max-w-md space-y-4">
-          {/* Timer - only show on last ticket */}
-          {hasSeenLastTicket && (
-            <div className="text-center">
-              <div className="text-white text-lg mb-2">
-                {translations.autoReturn} {timeLeft}s
-              </div>
-            </div>
-          )}
-
-          {/* New Purchase Button */}
-          <Button
-            onClick={handleNewPurchase}
-            className="w-full h-12 text-lg font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
-          >
-            {translations.newPurchase}
-          </Button>
-        </div>
-      </div>
+      </PageLayout>
     </div>
   )
 }

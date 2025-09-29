@@ -8,6 +8,7 @@ import { getCountryCodeFromLanguage, getFlagUrls } from '@/lib/languages'
 import { Button } from '@/components/ui/Button'
 import { MuseumIdDialog } from '@/components/MuseumIdDialog'
 import { Logo } from './Logo'
+import { PageLayout } from './PageLayout'
 
 interface LanguageButtonProps {
   language: {
@@ -25,7 +26,7 @@ function LanguageButton({ language, onClick }: LanguageButtonProps) {
   return (
     <Button
       variant="outline"
-      className="w-full h-24 p-0 bg-white/5 border-white/20 hover:bg-white/10 transition-all duration-200 relative overflow-hidden"
+      className="w-full h-32 p-0 bg-white/5 border-white/20 hover:bg-white/10 transition-all duration-200 relative overflow-hidden"
       onClick={onClick}
     >
       {/* Bandiera di sfondo */}
@@ -40,7 +41,7 @@ function LanguageButton({ language, onClick }: LanguageButtonProps) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       
       {/* Nome della lingua in sovraimpressione nella parte bassa */}
-      <span className="absolute bottom-2 left-0 right-0 text-white text-sm font-medium text-center px-2 z-10">
+      <span className="absolute bottom-3 left-0 right-0 text-white text-lg font-bold text-center px-2 z-10">
         {language.name}
       </span>
     </Button>
@@ -119,14 +120,9 @@ export function LanguageSelector() {
   const availableLanguages = localMuseum?.museum_languages || mockMuseum.museum_languages
 
   return (
-    <div className="min-h-screen bg-black flex flex-col">
-      {/* Header with Logo */}
-      <div className="flex flex-col items-center pt-8 pb-4">
-        <Logo />
-      </div>
-
+    <div className="relative">
       {/* Settings Button - Invisible clickable area in top right */}
-      <div className="absolute top-4 right-4 w-12 h-12">
+      <div className="absolute top-4 right-4 w-12 h-12 z-10">
         <button
           onClick={handleSettingsClick}
           className="w-full h-full opacity-0 cursor-pointer"
@@ -134,31 +130,27 @@ export function LanguageSelector() {
         />
       </div>
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-8">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-white mb-2">
-            {translations.selectLanguage}
-          </h1>
-        </div>
-
+      <PageLayout
+        title={translations.selectLanguage}
+        subtitle={translations.selectLanguageSubtitle || 'Choose your preferred language'}
+      >
         {/* Loading State */}
         {isLoading && (
-          <div className="text-white text-center">
+          <div className="text-white text-center text-xl">
             Loading museum data...
           </div>
         )}
 
         {/* Error State */}
         {error && (
-          <div className="text-red-400 text-center mb-4">
+          <div className="text-red-400 text-center mb-4 text-xl">
             {error}
           </div>
         )}
 
         {/* Language Grid */}
         {!isLoading && (
-          <div className="grid grid-cols-2 gap-4 w-full max-w-md">
+          <div className="grid grid-cols-2 gap-6 w-full max-w-2xl">
             {availableLanguages.map((language, index) => (
               <LanguageButton
                 key={`${language.language_id}-${language.code}-${index}`}
@@ -168,7 +160,7 @@ export function LanguageSelector() {
             ))}
           </div>
         )}
-      </div>
+      </PageLayout>
 
       {/* Museum ID Dialog */}
       <MuseumIdDialog
