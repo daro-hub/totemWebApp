@@ -372,6 +372,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: '金額を入力',
     confirm: '確認',
     cancel: 'キャンセル',
+    donate: '寄付する',
     museumIdDialog: {
       title: '博物館IDを変更',
       description: '別の博物館に接続するために新しい博物館IDを入力してください',
@@ -409,6 +410,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: '금액 입력',
     confirm: '확인',
     cancel: '취소',
+    donate: '기부하기',
     museumIdDialog: {
       title: '박물관 ID 변경',
       description: '다른 박물관에 연결하려면 새로운 박물관 ID를 입력하세요',
@@ -446,6 +448,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'أدخل المبلغ',
     confirm: 'تأكيد',
     cancel: 'إلغاء',
+    donate: 'تبرع',
     museumIdDialog: {
       title: 'تغيير معرف المتحف',
       description: 'أدخل معرف متحف جديد للاتصال بمتحف مختلف',
@@ -483,6 +486,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'राशि दर्ज करें',
     confirm: 'पुष्टि करें',
     cancel: 'रद्द करें',
+    donate: 'दान करें',
     museumIdDialog: {
       title: 'संग्रहालय ID बदलें',
       description: 'अलग संग्रहालय से जुड़ने के लिए नया संग्रहालय ID दर्ज करें',
@@ -520,6 +524,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Vnesite znesek',
     confirm: 'Potrdi',
     cancel: 'Prekliči',
+    donate: 'Doniraj',
     museumIdDialog: {
       title: 'Spremeni ID Muzeja',
       description: 'Vnesite nov ID Muzeja za povezavo z drugim muzejem',
@@ -558,6 +563,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Ange belopp',
     confirm: 'Bekräfta',
     cancel: 'Avbryt',
+    donate: 'Donera',
     museumIdDialog: {
       title: 'Ändra Museum ID',
       description: 'Ange ett nytt Museum ID för att ansluta till ett annat museum',
@@ -595,6 +601,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Zadajte sumu',
     confirm: 'Potvrdiť',
     cancel: 'Zrušiť',
+    donate: 'Darovať',
     museumIdDialog: {
       title: 'Zmeniť ID múzea',
       description: 'Zadajte nové ID múzea pre pripojenie k inému múzeu',
