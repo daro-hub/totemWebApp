@@ -94,22 +94,25 @@ export default function ThankYouPage() {
         subtitle={translations.scanQR}
         navigation={
           <div className="w-full max-w-md space-y-4">
-            {/* Timer - only show on last ticket */}
-            {hasSeenLastTicket && (
-              <div className="text-center">
-                <div className="text-white text-xl mb-2">
-                  {translations.autoReturn} {timeLeft}s
-                </div>
-              </div>
-            )}
-
-            {/* New Purchase Button */}
-            <Button
-              onClick={handleNewPurchase}
-              className="w-full h-16 text-xl font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
-            >
-              {translations.newPurchase}
-            </Button>
+            {/* Return Home Button with Progress Bar */}
+            <div className="relative">
+              <Button
+                onClick={handleNewPurchase}
+                className="w-full h-20 text-2xl font-bold bg-teal-600 hover:bg-teal-700 text-white rounded-lg relative overflow-hidden"
+              >
+                {translations.returnHome}
+                
+                {/* Progress Bar - only show on last ticket */}
+                {hasSeenLastTicket && (
+                  <div className="absolute bottom-0 left-0 h-1 bg-white/30 w-full">
+                    <div 
+                      className="h-full bg-white transition-all duration-1000 ease-linear"
+                      style={{ width: `${((20 - timeLeft) / 20) * 100}%` }}
+                    />
+                  </div>
+                )}
+              </Button>
+            </div>
           </div>
         }
       >

@@ -24,27 +24,27 @@ function LanguageButton({ language, onClick }: LanguageButtonProps) {
   const flagUrls = getFlagUrls(countryCode)
 
   return (
-    <Button
-      variant="outline"
-      className="w-full h-40 p-0 bg-white/5 border-white/20 hover:bg-white/10 transition-all duration-200 relative overflow-hidden"
+    <button
       onClick={onClick}
+      className="w-full bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg transition-all duration-200 overflow-hidden"
     >
-      {/* Bandiera di sfondo */}
-      <img
-        src={flagUrls.flagUrl}
-        srcSet={`${flagUrls.flagUrl2x} 2x, ${flagUrls.flagUrl3x} 3x`}
-        alt={`${language.name} flag`}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      {/* Bandiera in alto */}
+      <div className="relative w-full h-40 rounded-xl overflow-hidden">
+        <img
+          src={flagUrls.flagUrl}
+          srcSet={`${flagUrls.flagUrl2x} 2x, ${flagUrls.flagUrl3x} 3x`}
+          alt={`${language.name} flag`}
+          className="w-full h-full rounded-lg object-cover"
+        />
+      </div>
       
-      {/* Sfumatura nera per la leggibilità del testo */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-      
-      {/* Nome della lingua in sovraimpressione nella parte bassa */}
-      <span className="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center px-2 z-10">
-        {language.name}
-      </span>
-    </Button>
+      {/* Nome della lingua sotto */}
+      <div className="py-2 px-4">
+        <span className="text-white text-xl font-bold text-center block">
+          {language.name}
+        </span>
+      </div>
+    </button>
   )
 }
 
@@ -131,7 +131,7 @@ export function LanguageSelector() {
       </div>
 
       <PageLayout
-        title={translations.selectLanguage}
+        title="Seleziona lingua"
         subtitle="Choose your preferred language"
       >
         {/* Loading State */}

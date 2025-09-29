@@ -38,7 +38,7 @@ export default function PaymentConfirmPage() {
         <div className="w-full max-w-md space-y-4">
           <Button
             onClick={handlePayNow}
-            className="w-full h-16 text-xl font-semibold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
+            className="w-full h-20 text-2xl font-bold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
           >
             {translations.payNow}
           </Button>
@@ -46,7 +46,7 @@ export default function PaymentConfirmPage() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="w-full h-16 text-xl font-semibold border-2 border-white bg-black hover:bg-white/10 text-white rounded-lg"
+            className="w-full h-20 text-2xl font-bold border-2 border-white bg-black hover:bg-white/10 text-white rounded-lg"
           >
             {translations.back}
           </Button>
@@ -54,19 +54,19 @@ export default function PaymentConfirmPage() {
       }
     >
       {/* Order Details */}
-      <div className="flex items-center justify-center gap-6 mb-12">
+      <div className="flex flex-col items-center justify-center gap-8 mb-12">
         {/* Order Icon */}
-        <div className="w-16 h-16 flex items-center justify-center">
-          <Ticket className="w-12 h-12 text-white" />
+        <div className="w-32 h-32 flex items-center justify-center">
+          <Ticket className="w-24 h-24 text-white" />
         </div>
 
         {/* Order Info */}
-        <div className="text-left">
-          <div className="text-3xl font-bold text-white mb-2">
-            {translations.quantity}: {ticketQuantity}
+        <div className="text-center">
+          <div className="text-5xl font-bold text-white mb-4">
+            {ticketQuantity} {translations.audioguide}
           </div>
-          <div className="text-2xl font-bold text-white">
-            {translations.total}: €{totalPrice}
+          <div className="text-4xl font-bold text-white">
+            €{totalPrice}
           </div>
         </div>
       </div>
