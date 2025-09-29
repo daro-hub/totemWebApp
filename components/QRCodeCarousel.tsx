@@ -145,6 +145,7 @@ export function QRCodeCarousel({ onTicketsGenerated, onTicketIndexChange }: QRCo
               isActive={isActive}
               isNext={isNext}
               isPrev={isPrev}
+              onClick={() => goToTicket(index)}
             />
           )
         })}
@@ -194,6 +195,7 @@ interface QRCodeCardProps {
   isActive: boolean
   isNext: boolean
   isPrev: boolean
+  onClick: () => void
 }
 
 function QRCodeCard({
@@ -204,6 +206,7 @@ function QRCodeCard({
   isActive,
   isNext,
   isPrev,
+  onClick,
 }: QRCodeCardProps) {
   const { translations } = useApp()
   
@@ -245,7 +248,7 @@ function QRCodeCard({
 
   return (
     <div
-      className={`absolute w-64 h-64 transition-all duration-300 ease-out ${
+      className={`absolute w-64 h-64 transition-all duration-300 ease-out cursor-pointer ${
         isActive ? 'scale-100' : 'scale-95'
       }`}
       style={{
@@ -254,6 +257,7 @@ function QRCodeCard({
         top: '50%',
         transform: `${cardStyle.transform} translate(-50%, -50%)`
       }}
+      onClick={onClick}
     >
       {/* Carta principale - molto più semplice */}
       <div className="relative w-full h-full bg-white rounded-lg shadow-xl overflow-hidden">
