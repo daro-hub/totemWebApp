@@ -639,6 +639,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Adja meg az összeget',
     confirm: 'Megerősítés',
     cancel: 'Mégse',
+    donate: 'Adományozás',
     museumIdDialog: {
       title: 'Múzeum ID módosítása',
       description: 'Adjon meg új múzeum ID-t egy másik múzeumba való csatlakozáshoz',
@@ -676,6 +677,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Введіть суму',
     confirm: 'Підтвердити',
     cancel: 'Скасувати',
+    donate: 'Пожертвувати',
     museumIdDialog: {
       title: 'Змінити ID музею',
       description: 'Введіть новий ID музею для підключення до іншого музею',
@@ -713,6 +715,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Wprowadź kwotę',
     confirm: 'Potwierdź',
     cancel: 'Anuluj',
+    donate: 'Przekaż darowiznę',
     museumIdDialog: {
       title: 'Zmień ID muzeum',
       description: 'Wprowadź nowe ID muzeum, aby połączyć się z innym muzeum',
@@ -750,6 +753,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Introduceți suma',
     confirm: 'Confirmă',
     cancel: 'Anulează',
+    donate: 'Donează',
     museumIdDialog: {
       title: 'Schimbați ID-ul muzeului',
       description: 'Introduceți un nou ID muzeu pentru a vă conecta la un alt muzeu',
@@ -787,6 +791,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Indtast beløb',
     confirm: 'Bekræft',
     cancel: 'Annuller',
+    donate: 'Donér',
     museumIdDialog: {
       title: 'Ændre museum ID',
       description: 'Indtast et nyt museum ID for at forbinde til et andet museum',
@@ -824,6 +829,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Miktar girin',
     confirm: 'Onayla',
     cancel: 'İptal',
+    donate: 'Bağış Yap',
     museumIdDialog: {
       title: 'Müze ID değiştir',
       description: 'Başka bir müzeye bağlanmak için yeni müze ID girin',
@@ -861,6 +867,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Εισάγετε ποσό',
     confirm: 'Επιβεβαίωση',
     cancel: 'Ακύρωση',
+    donate: 'Δωρεά',
     museumIdDialog: {
       title: 'Αλλαγή ID μουσείου',
       description: 'Εισάγετε νέο ID μουσείου για σύνδεση σε άλλο μουσείο',
@@ -898,6 +905,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'পরিমাণ লিখুন',
     confirm: 'নিশ্চিত করুন',
     cancel: 'বাতিল',
+    donate: 'দান করুন',
     museumIdDialog: {
       title: 'মিউজিয়াম ID পরিবর্তন করুন',
       description: 'অন্য মিউজিয়ামের সাথে সংযুক্ত হতে নতুন মিউজিয়াম ID লিখুন',
@@ -935,6 +943,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Voer bedrag in',
     confirm: 'Bevestigen',
     cancel: 'Annuleren',
+    donate: 'Doneren',
     museumIdDialog: {
       title: 'Museum ID wijzigen',
       description: 'Voer een nieuw museum ID in om verbinding te maken met een ander museum',
@@ -972,6 +981,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Shkruani shumën',
     confirm: 'Konfirmo',
     cancel: 'Anulo',
+    donate: 'Dhuro',
     museumIdDialog: {
       title: 'Ndrysho ID-në e muzeut',
       description: 'Shkruani një ID të re muzeu për të lidhur me një muze tjetër',
@@ -1009,6 +1019,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Masukkan jumlah',
     confirm: 'Konfirmasi',
     cancel: 'Batal',
+    donate: 'Donasi',
     museumIdDialog: {
       title: 'Ubah ID Museum',
       description: 'Masukkan ID museum baru untuk terhubung ke museum lain',
@@ -1046,6 +1057,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'ใส่จำนวนเงิน',
     confirm: 'ยืนยัน',
     cancel: 'ยกเลิก',
+    donate: 'บริจาค',
     museumIdDialog: {
       title: 'เปลี่ยน ID พิพิธภัณฑ์',
       description: 'ใส่ ID พิพิธภัณฑ์ใหม่เพื่อเชื่อมต่อกับพิพิธภัณฑ์อื่น',
@@ -1083,6 +1095,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Nhập số tiền',
     confirm: 'Xác nhận',
     cancel: 'Hủy',
+    donate: 'Quyên góp',
     museumIdDialog: {
       title: 'Thay đổi ID Bảo tàng',
       description: 'Nhập ID Bảo tàng mới để kết nối với bảo tàng khác',
@@ -1120,6 +1133,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'הכנס סכום',
     confirm: 'אישור',
     cancel: 'ביטול',
+    donate: 'תרומה',
     museumIdDialog: {
       title: 'שנה מזהה מוזיאון',
       description: 'הכנס מזהה מוזיאון חדש להתחברות למוזיאון אחר',
@@ -1157,6 +1171,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'مبلغ وارد کنید',
     confirm: 'تأیید',
     cancel: 'لغو',
+    donate: 'کمک مالی',
     museumIdDialog: {
       title: 'تغییر شناسه موزه',
       description: 'شناسه موزه جدید را برای اتصال به موزه دیگری وارد کنید',
@@ -1194,6 +1209,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Ilagay ang halaga',
     confirm: 'Kumpirmahin',
     cancel: 'Kanselahin',
+    donate: 'Mag-donate',
     museumIdDialog: {
       title: 'Baguhin ang Museum ID',
       description: 'Ilagay ang bagong Museum ID para makakonekta sa ibang museum',
@@ -1231,6 +1247,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Masukkan jumlah',
     confirm: 'Sahkan',
     cancel: 'Batal',
+    donate: 'Derma',
     museumIdDialog: {
       title: 'Tukar ID Muzium',
       description: 'Masukkan ID Muzium baru untuk menyambung ke muzium lain',
@@ -1268,6 +1285,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Ingiza kiasi',
     confirm: 'Thibitisha',
     cancel: 'Ghairi',
+    donate: 'Toa',
     museumIdDialog: {
       title: 'Badilisha ID ya Jumba la Makumbusho',
       description: 'Ingiza ID mpya ya Jumba la Makumbusho kuunganisha na jumba lingine',
@@ -1305,6 +1323,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Zadejte částku',
     confirm: 'Potvrdit',
     cancel: 'Zrušit',
+    donate: 'Darovat',
     museumIdDialog: {
       title: 'Změnit ID muzea',
       description: 'Zadejte nové ID muzea pro připojení k jinému muzeu',
@@ -1342,6 +1361,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Syötä määrä',
     confirm: 'Vahvista',
     cancel: 'Peruuta',
+    donate: 'Lahjoita',
     museumIdDialog: {
       title: 'Vaihda museon ID',
       description: 'Syötä uusi museon ID yhdistääksesi toiseen museoon',
@@ -1379,6 +1399,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: 'Skriv inn beløp',
     confirm: 'Bekreft',
     cancel: 'Avbryt',
+    donate: 'Doner',
     museumIdDialog: {
       title: 'Endre museum ID',
       description: 'Skriv inn et nytt museum ID for å koble til et annet museum',
@@ -1416,6 +1437,7 @@ export const translations: Record<string, Translations> = {
     customAmountPlaceholder: '金額を入力',
     confirm: '確認',
     cancel: 'キャンセル',
+    donate: '寄付する',
     museumIdDialog: {
       title: 'ミュージアムIDを変更',
       description: '他のミュージアムに接続するために新しいミュージアムIDを入力してください',
