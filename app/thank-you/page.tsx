@@ -26,6 +26,14 @@ export default function ThankYouPage() {
     }
   }
 
+  // Reset timer on email input change
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value)
+    if (hasSeenLastTicket) {
+      setTimeLeft(20)
+    }
+  }
+
   // Countdown timer - attivo dopo aver visto l'ultimo ticket, non si disattiva mai
   useEffect(() => {
     if (!hasSeenLastTicket) return
@@ -142,7 +150,7 @@ export default function ThankYouPage() {
                 type="email"
                 placeholder={translations.emailPlaceholder}
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleEmailChange}
                 className="w-full h-12 text-lg"
               />
             </div>
