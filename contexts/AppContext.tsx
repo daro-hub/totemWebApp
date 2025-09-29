@@ -13,6 +13,7 @@ interface Museum {
   name: string
   code: string
   museum_languages: MuseumLanguage[]
+  is_church: boolean
 }
 
 interface Ticket {
@@ -30,6 +31,7 @@ interface AppState {
   // Purchase flow
   ticketQuantity: number
   tickets: Ticket[]
+  donationAmount: number
   
   // UI state
   translations: Translations
@@ -45,6 +47,7 @@ interface AppContextType extends AppState {
   setTicketPrice: (price: number) => void
   setTicketQuantity: (quantity: number) => void
   setTickets: (tickets: Ticket[]) => void
+  setDonationAmount: (amount: number) => void
   setLoading: (loading: boolean) => void
   setError: (error: string | null) => void
   resetPurchase: () => void
@@ -71,6 +74,7 @@ export function AppProvider({ children }: AppProviderProps) {
   const [ticketPrice, setTicketPrice] = useState<number>(5) // Default price
   const [ticketQuantity, setTicketQuantity] = useState<number>(1)
   const [tickets, setTickets] = useState<Ticket[]>([])
+  const [donationAmount, setDonationAmount] = useState<number>(0)
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -110,6 +114,7 @@ export function AppProvider({ children }: AppProviderProps) {
   const resetPurchase = useCallback(() => {
     setTicketQuantity(1)
     setTickets([])
+    setDonationAmount(0)
     setError(null)
   }, [])
 
@@ -121,6 +126,7 @@ export function AppProvider({ children }: AppProviderProps) {
     ticketPrice,
     ticketQuantity,
     tickets,
+    donationAmount,
     translations,
     isLoading,
     error,
@@ -132,6 +138,7 @@ export function AppProvider({ children }: AppProviderProps) {
     setTicketPrice,
     setTicketQuantity,
     setTickets,
+    setDonationAmount,
     setLoading,
     setError: setErrorCallback,
     resetPurchase

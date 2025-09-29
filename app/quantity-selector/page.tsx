@@ -9,7 +9,7 @@ import { PageLayout } from '@/components/PageLayout'
 
 export default function QuantitySelectorPage() {
   const router = useRouter()
-  const { ticketQuantity, setTicketQuantity, translations } = useApp()
+  const { ticketQuantity, setTicketQuantity, translations, museum } = useApp()
 
   const handleDecrement = () => {
     if (ticketQuantity > 1) {
@@ -24,7 +24,12 @@ export default function QuantitySelectorPage() {
   }
 
   const handleProceed = () => {
-    router.push('/payment-confirm')
+    // Se è una chiesa, vai alla pagina di selezione donazione
+    if (museum?.is_church) {
+      router.push('/donation-selector')
+    } else {
+      router.push('/payment-confirm')
+    }
   }
 
   const handleBack = () => {

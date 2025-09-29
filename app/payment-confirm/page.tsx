@@ -10,14 +10,15 @@ import { PageLayout } from '@/components/PageLayout'
 
 export default function PaymentConfirmPage() {
   const router = useRouter()
-  const { ticketQuantity, ticketPrice, translations, museumId } = useApp()
+  const { ticketQuantity, ticketPrice, translations, museumId, museum, donationAmount } = useApp()
 
   const totalPrice = ticketQuantity * ticketPrice
+  const finalTotal = museum?.is_church ? donationAmount : totalPrice
 
   const handlePayNow = () => {
     // Invia dati pagamento all'app Android se in esecuzione in wrapper
     if (isRunningInAndroidWrapper()) {
-      const paymentData = createPaymentData(totalPrice, ticketQuantity, museumId)
+      const paymentData = createPaymentData(finalTotal, ticketQuantity, museumId)
       sendPaymentToAndroid(paymentData)
       console.log('Dati pagamento inviati all\'app Android:', paymentData)
     }
@@ -27,7 +28,12 @@ export default function PaymentConfirmPage() {
   }
 
   const handleBack = () => {
-    router.push('/quantity-selector')
+    // Se è una chiesa, torna alla pagina donazione
+    if (museum?.is_church) {
+      router.push('/donation-selector')
+    } else {
+      router.push('/quantity-selector')
+    }
   }
 
   return (
@@ -40,7 +46,7 @@ export default function PaymentConfirmPage() {
             onClick={handlePayNow}
             className="w-full h-20 text-2xl font-bold bg-teal-600 hover:bg-teal-700 text-white rounded-lg"
           >
-            {translations.payNow}
+            {museum?.is_church ? translations.donate : translations.payNow}
           </Button>
           
           <Button
@@ -66,7 +72,7 @@ export default function PaymentConfirmPage() {
             {ticketQuantity} {translations.audioguide}
           </div>
           <div className="text-4xl font-bold text-white">
-            €{totalPrice}
+            €{finalTotal}
           </div>
         </div>
       </div>

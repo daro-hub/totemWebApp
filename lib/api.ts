@@ -10,6 +10,7 @@ export interface Museum {
   name: string
   code: string
   museum_languages: MuseumLanguage[]
+  is_church: boolean
 }
 
 export interface TicketResponse {
@@ -52,6 +53,7 @@ function getMockMuseumData(): Museum {
   return {
     name: "Test Museum",
     code: "TESTMUSEUM",
+    is_church: false,
     museum_languages: [
       { language_id: 2, code: "en", name: "English" },
       { language_id: 1, code: "it", name: "Italiano" },
