@@ -37,23 +37,23 @@ export interface Translations {
     cancel: string
   }
   // Email translations
-  emailSubject?: string
-  emailGreeting?: string
-  emailMessage?: string
-  museumName?: string
-  yourTickets?: string
-  ticketCode?: string
-  qrCode?: string
-  attachedFile?: string
-  howToUse?: string
-  step1?: string
-  step2?: string
-  step3?: string
-  emailFooter?: string
-  contactInfo?: string
-  emailSuccess?: string
-  emailError?: string
-  sendingEmail?: string
+  emailSubject: string
+  emailGreeting: string
+  emailMessage: string
+  museumName: string
+  yourTickets: string
+  ticketCode: string
+  qrCode: string
+  attachedFile: string
+  howToUse: string
+  step1: string
+  step2: string
+  step3: string
+  emailFooter: string
+  contactInfo: string
+  emailSuccess: string
+  emailError: string
+  sendingEmail: string
 }
 
 export const translations: Record<string, Translations> = {
@@ -423,24 +423,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID Музея',
       confirm: 'Подтвердить',
       cancel: 'Отменить'
-    },
-    emailSubject: 'Ваши билеты для',
-    emailGreeting: 'Привет! Вот ваши билеты',
-    emailMessage: 'Спасибо за выбор AmuseApp! Наслаждайтесь посещением с нашим интерактивным аудиогидом.',
-    museumName: 'Музей',
-    yourTickets: 'Ваши билеты',
-    ticketCode: 'Код',
-    qrCode: 'QR Код',
-    attachedFile: 'Вложение',
-    howToUse: 'Как использовать ваши билеты',
-    step1: 'Отсканируйте QR код каждого билета на входе',
-    step2: 'Откройте аудиогид на вашем смартфоне',
-    step3: 'Наслаждайтесь посещением!',
-    emailFooter: 'Спасибо за выбор AmuseApp для вашего посещения!',
-    contactInfo: 'Для поддержки: support@amuseapp.it',
-    emailSuccess: 'Email успешно отправлен!',
-    emailError: 'Не удалось отправить email. Попробуйте снова.',
-    sendingEmail: 'Отправка email...'
+    }
   },
   zh: {
     selectLanguage: '选择您的语言',
@@ -478,24 +461,7 @@ export const translations: Record<string, Translations> = {
       placeholder: '博物馆ID',
       confirm: '确认',
       cancel: '取消'
-    },
-    emailSubject: '您的门票',
-    emailGreeting: '您好！这是您的门票',
-    emailMessage: '感谢选择AmuseApp！通过我们的互动音频导览享受您的参观。',
-    museumName: '博物馆',
-    yourTickets: '您的门票',
-    ticketCode: '代码',
-    qrCode: '二维码',
-    attachedFile: '附件',
-    howToUse: '如何使用您的门票',
-    step1: '在入口处扫描每张门票的二维码',
-    step2: '在您的智能手机上打开音频导览',
-    step3: '享受您的参观！',
-    emailFooter: '感谢选择AmuseApp进行您的参观！',
-    contactInfo: '如需支持：support@amuseapp.it',
-    emailSuccess: '邮件发送成功！',
-    emailError: '邮件发送失败。请重试。',
-    sendingEmail: '正在发送邮件...'
+    }
   },
   ja: {
     selectLanguage: '言語を選択してください',
@@ -571,24 +537,7 @@ export const translations: Record<string, Translations> = {
       placeholder: '박물관 ID',
       confirm: '확인',
       cancel: '취소'
-    },
-    emailSubject: '티켓',
-    emailGreeting: '안녕하세요! 티켓입니다',
-    emailMessage: 'AmuseApp을 선택해 주셔서 감사합니다! 인터랙티브 오디오 가이드로 방문을 즐기세요.',
-    museumName: '박물관',
-    yourTickets: '티켓',
-    ticketCode: '코드',
-    qrCode: 'QR 코드',
-    attachedFile: '첨부파일',
-    howToUse: '티켓 사용법',
-    step1: '입구에서 각 티켓의 QR 코드를 스캔하세요',
-    step2: '스마트폰에서 오디오 가이드를 열어보세요',
-    step3: '방문을 즐기세요!',
-    emailFooter: 'AmuseApp을 선택해 주셔서 감사합니다!',
-    contactInfo: '지원: support@amuseapp.it',
-    emailSuccess: '이메일 전송 성공!',
-    emailError: '이메일 전송 실패. 다시 시도해주세요.',
-    sendingEmail: '이메일 전송 중...'
+    }
   },
   ar: {
     selectLanguage: 'اختر لغتك',
@@ -626,24 +575,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'معرف المتحف',
       confirm: 'تأكيد',
       cancel: 'إلغاء'
-    },
-    emailSubject: 'تذاكرك لـ',
-    emailGreeting: 'مرحباً! إليك تذاكرك',
-    emailMessage: 'شكراً لاختيار AmuseApp! استمتع بزيارتك مع دليلنا الصوتي التفاعلي.',
-    museumName: 'المتحف',
-    yourTickets: 'تذاكرك',
-    ticketCode: 'الكود',
-    qrCode: 'رمز QR',
-    attachedFile: 'مرفق',
-    howToUse: 'كيفية استخدام تذاكرك',
-    step1: 'امسح رمز QR لكل تذكرة عند المدخل',
-    step2: 'افتح الدليل الصوتي على هاتفك الذكي',
-    step3: 'استمتع بزيارتك!',
-    emailFooter: 'شكراً لاختيار AmuseApp لزيارتك!',
-    contactInfo: 'للدعم: support@amuseapp.it',
-    emailSuccess: 'تم إرسال البريد الإلكتروني بنجاح!',
-    emailError: 'فشل في إرسال البريد الإلكتروني. يرجى المحاولة مرة أخرى.',
-    sendingEmail: 'جاري إرسال البريد الإلكتروني...'
+    }
   },
   hi: {
     selectLanguage: 'अपनी भाषा चुनें',
@@ -681,24 +613,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'संग्रहालय ID',
       confirm: 'पुष्टि करें',
       cancel: 'रद्द करें'
-    },
-    emailSubject: 'आपके टिकट',
-    emailGreeting: 'नमस्ते! यहाँ आपके टिकट हैं',
-    emailMessage: 'AmuseApp चुनने के लिए धन्यवाद! हमारे इंटरैक्टिव ऑडियो गाइड के साथ अपनी यात्रा का आनंद लें।',
-    museumName: 'संग्रहालय',
-    yourTickets: 'आपके टिकट',
-    ticketCode: 'कोड',
-    qrCode: 'QR कोड',
-    attachedFile: 'संलग्नक',
-    howToUse: 'अपने टिकट का उपयोग कैसे करें',
-    step1: 'प्रवेश द्वार पर प्रत्येक टिकट का QR कोड स्कैन करें',
-    step2: 'अपने स्मार्टफोन पर ऑडियो गाइड खोलें',
-    step3: 'अपनी यात्रा का आनंद लें!',
-    emailFooter: 'अपनी यात्रा के लिए AmuseApp चुनने के लिए धन्यवाद!',
-    contactInfo: 'सहायता के लिए: support@amuseapp.it',
-    emailSuccess: 'ईमेल सफलतापूर्वक भेजा गया!',
-    emailError: 'ईमेल भेजने में विफल। कृपया पुनः प्रयास करें।',
-    sendingEmail: 'ईमेल भेजा जा रहा है...'
+    }
   },
   sl: {
     selectLanguage: 'Izberite svoj jezik',
@@ -736,24 +651,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID Muzeja',
       confirm: 'Potrdi',
       cancel: 'Prekliči'
-    },
-    emailSubject: 'Vaše vstopnice za',
-    emailGreeting: 'Pozdravljeni! Tukaj so vaše vstopnice',
-    emailMessage: 'Hvala, ker ste izbrali AmuseApp! Uživajte v obisku z našim interaktivnim zvočnim vodnikom.',
-    museumName: 'Muzej',
-    yourTickets: 'Vaše vstopnice',
-    ticketCode: 'Koda',
-    qrCode: 'QR koda',
-    attachedFile: 'Priloga',
-    howToUse: 'Kako uporabiti vaše vstopnice',
-    step1: 'Skenirajte QR kodo vsake vstopnice na vhodu',
-    step2: 'Odprite zvočni vodnik na svojem pametnem telefonu',
-    step3: 'Uživajte v obisku!',
-    emailFooter: 'Hvala, ker ste izbrali AmuseApp za svoj obisk!',
-    contactInfo: 'Za podporo: support@amuseapp.it',
-    emailSuccess: 'Email uspešno poslan!',
-    emailError: 'Pošiljanje emaila neuspešno. Poskusite znova.',
-    sendingEmail: 'Pošiljam email...'
+    }
   },
   // Aggiungiamo traduzioni per altre lingue mancanti
   sv: {
@@ -792,24 +690,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Museum ID',
       confirm: 'Bekräfta',
       cancel: 'Avbryt'
-    },
-    emailSubject: 'Dina biljetter för',
-    emailGreeting: 'Hej! Här är dina biljetter',
-    emailMessage: 'Tack för att du valde AmuseApp! Njut av ditt besök med vår interaktiva ljudguide.',
-    museumName: 'Museum',
-    yourTickets: 'Dina biljetter',
-    ticketCode: 'Kod',
-    qrCode: 'QR-kod',
-    attachedFile: 'Bilaga',
-    howToUse: 'Hur du använder dina biljetter',
-    step1: 'Skanna QR-koden för varje biljett vid ingången',
-    step2: 'Öppna ljudguiden på din smartphone',
-    step3: 'Njut av ditt besök!',
-    emailFooter: 'Tack för att du valde AmuseApp för ditt besök!',
-    contactInfo: 'För support: support@amuseapp.it',
-    emailSuccess: 'E-post skickat framgångsrikt!',
-    emailError: 'Misslyckades att skicka e-post. Försök igen.',
-    sendingEmail: 'Skickar e-post...'
+    }
   },
   sk: {
     selectLanguage: 'Vyberte si jazyk',
@@ -847,24 +728,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID múzea',
       confirm: 'Potvrdiť',
       cancel: 'Zrušiť'
-    },
-    emailSubject: 'Vaše lístky pre',
-    emailGreeting: 'Ahoj! Tu sú vaše lístky',
-    emailMessage: 'Ďakujeme za výber AmuseApp! Užite si návštevu s našim interaktívnym audio sprievodcom.',
-    museumName: 'Múzeum',
-    yourTickets: 'Vaše lístky',
-    ticketCode: 'Kód',
-    qrCode: 'QR kód',
-    attachedFile: 'Príloha',
-    howToUse: 'Ako používať vaše lístky',
-    step1: 'Naskenujte QR kód každého lístka pri vchode',
-    step2: 'Otvorte audio sprievodcu na svojom smartfóne',
-    step3: 'Užite si návštevu!',
-    emailFooter: 'Ďakujeme za výber AmuseApp pre vašu návštevu!',
-    contactInfo: 'Pre podporu: support@amuseapp.it',
-    emailSuccess: 'Email úspešne odoslaný!',
-    emailError: 'Zlyhanie odoslania emailu. Skúste to znova.',
-    sendingEmail: 'Odosielam email...'
+    }
   },
   hu: {
     selectLanguage: 'Válasszon nyelvet',
@@ -902,24 +766,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Múzeum ID',
       confirm: 'Megerősítés',
       cancel: 'Mégse'
-    },
-    emailSubject: 'Jegyei a',
-    emailGreeting: 'Helló! Itt vannak a jegyei',
-    emailMessage: 'Köszönjük, hogy az AmuseApp-ot választotta! Élvezze látogatását interaktív hangos útmutatónkkal.',
-    museumName: 'Múzeum',
-    yourTickets: 'Jegyei',
-    ticketCode: 'Kód',
-    qrCode: 'QR kód',
-    attachedFile: 'Melléklet',
-    howToUse: 'Hogyan használja a jegyeit',
-    step1: 'Olvassa be minden jegy QR kódját a bejáratnál',
-    step2: 'Nyissa meg a hangos útmutatót okostelefonján',
-    step3: 'Élvezze a látogatást!',
-    emailFooter: 'Köszönjük, hogy az AmuseApp-ot választotta látogatásához!',
-    contactInfo: 'Támogatásért: support@amuseapp.it',
-    emailSuccess: 'Email sikeresen elküldve!',
-    emailError: 'Az email küldése sikertelen. Kérjük, próbálja újra.',
-    sendingEmail: 'Email küldése...'
+    }
   },
   uk: {
     selectLanguage: 'Оберіть мову',
@@ -957,24 +804,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID музею',
       confirm: 'Підтвердити',
       cancel: 'Скасувати'
-    },
-    emailSubject: 'Ваші квитки для',
-    emailGreeting: 'Привіт! Ось ваші квитки',
-    emailMessage: 'Дякуємо за вибір AmuseApp! Насолоджуйтесь відвідуванням з нашим інтерактивним аудіогідом.',
-    museumName: 'Музей',
-    yourTickets: 'Ваші квитки',
-    ticketCode: 'Код',
-    qrCode: 'QR код',
-    attachedFile: 'Вкладення',
-    howToUse: 'Як використовувати ваші квитки',
-    step1: 'Відскануйте QR код кожного квитка біля входу',
-    step2: 'Відкрийте аудіогід на вашому смартфоні',
-    step3: 'Насолоджуйтесь відвідуванням!',
-    emailFooter: 'Дякуємо за вибір AmuseApp для вашого відвідування!',
-    contactInfo: 'Для підтримки: support@amuseapp.it',
-    emailSuccess: 'Email успішно надіслано!',
-    emailError: 'Не вдалося надіслати email. Спробуйте ще раз.',
-    sendingEmail: 'Надсилання email...'
+    }
   },
   pl: {
     selectLanguage: 'Wybierz język',
@@ -1012,24 +842,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID muzeum',
       confirm: 'Potwierdź',
       cancel: 'Anuluj'
-    },
-    emailSubject: 'Twoje bilety na',
-    emailGreeting: 'Cześć! Oto twoje bilety',
-    emailMessage: 'Dziękujemy za wybór AmuseApp! Ciesz się wizytą z naszym interaktywnym przewodnikiem audio.',
-    museumName: 'Muzeum',
-    yourTickets: 'Twoje bilety',
-    ticketCode: 'Kod',
-    qrCode: 'Kod QR',
-    attachedFile: 'Załącznik',
-    howToUse: 'Jak używać swoich biletów',
-    step1: 'Zeskanuj kod QR każdego biletu przy wejściu',
-    step2: 'Otwórz przewodnik audio na swoim smartfonie',
-    step3: 'Ciesz się wizytą!',
-    emailFooter: 'Dziękujemy za wybór AmuseApp na swoją wizytę!',
-    contactInfo: 'Wsparcie: support@amuseapp.it',
-    emailSuccess: 'Email wysłany pomyślnie!',
-    emailError: 'Nie udało się wysłać emaila. Spróbuj ponownie.',
-    sendingEmail: 'Wysyłanie emaila...'
+    }
   },
   ro: {
     selectLanguage: 'Selectați limba',
@@ -1067,24 +880,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID muzeu',
       confirm: 'Confirmă',
       cancel: 'Anulează'
-    },
-    emailSubject: 'Biletele tale pentru',
-    emailGreeting: 'Salut! Iată biletele tale',
-    emailMessage: 'Mulțumim că ai ales AmuseApp! Bucură-te de vizita ta cu ghidul nostru audio interactiv.',
-    museumName: 'Muzeu',
-    yourTickets: 'Biletele tale',
-    ticketCode: 'Cod',
-    qrCode: 'Cod QR',
-    attachedFile: 'Anexă',
-    howToUse: 'Cum să folosești biletele tale',
-    step1: 'Scanează codul QR al fiecărui bilet la intrare',
-    step2: 'Deschide ghidul audio pe smartphone-ul tău',
-    step3: 'Bucură-te de vizită!',
-    emailFooter: 'Mulțumim că ai ales AmuseApp pentru vizita ta!',
-    contactInfo: 'Pentru suport: support@amuseapp.it',
-    emailSuccess: 'Email trimis cu succes!',
-    emailError: 'Trimiterea emailului a eșuat. Vă rugăm să încercați din nou.',
-    sendingEmail: 'Se trimite emailul...'
+    }
   },
   da: {
     selectLanguage: 'Vælg sprog',
@@ -1122,24 +918,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Museum ID',
       confirm: 'Bekræft',
       cancel: 'Annuller'
-    },
-    emailSubject: 'Dine billetter til',
-    emailGreeting: 'Hej! Her er dine billetter',
-    emailMessage: 'Tak for at vælge AmuseApp! Nyd dit besøg med vores interaktive lydguide.',
-    museumName: 'Museum',
-    yourTickets: 'Dine billetter',
-    ticketCode: 'Kode',
-    qrCode: 'QR-kode',
-    attachedFile: 'Vedhæftet fil',
-    howToUse: 'Sådan bruger du dine billetter',
-    step1: 'Scan QR-koden på hver billet ved indgangen',
-    step2: 'Åbn lydguiden på din smartphone',
-    step3: 'Nyd dit besøg!',
-    emailFooter: 'Tak for at vælge AmuseApp til dit besøg!',
-    contactInfo: 'For support: support@amuseapp.it',
-    emailSuccess: 'Email sendt med succes!',
-    emailError: 'Kunne ikke sende email. Prøv igen.',
-    sendingEmail: 'Sender email...'
+    }
   },
   tr: {
     selectLanguage: 'Dil seçin',
@@ -1177,24 +956,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Müze ID',
       confirm: 'Onayla',
       cancel: 'İptal'
-    },
-    emailSubject: 'Biletleriniz',
-    emailGreeting: 'Merhaba! İşte biletleriniz',
-    emailMessage: 'AmuseApp\'i seçtiğiniz için teşekkürler! Etkileşimli ses rehberimizle ziyaretinizin keyfini çıkarın.',
-    museumName: 'Müze',
-    yourTickets: 'Biletleriniz',
-    ticketCode: 'Kod',
-    qrCode: 'QR Kod',
-    attachedFile: 'Ek dosya',
-    howToUse: 'Biletlerinizi nasıl kullanırsınız',
-    step1: 'Girişte her biletin QR kodunu tarayın',
-    step2: 'Akıllı telefonunuzda ses rehberini açın',
-    step3: 'Ziyaretinizin keyfini çıkarın!',
-    emailFooter: 'Ziyaretiniz için AmuseApp\'i seçtiğiniz için teşekkürler!',
-    contactInfo: 'Destek için: support@amuseapp.it',
-    emailSuccess: 'Email başarıyla gönderildi!',
-    emailError: 'Email gönderilemedi. Lütfen tekrar deneyin.',
-    sendingEmail: 'Email gönderiliyor...'
+    }
   },
   el: {
     selectLanguage: 'Επιλέξτε γλώσσα',
@@ -1232,24 +994,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID μουσείου',
       confirm: 'Επιβεβαίωση',
       cancel: 'Ακύρωση'
-    },
-    emailSubject: 'Τα εισιτήριά σας για',
-    emailGreeting: 'Γεια σας! Εδώ είναι τα εισιτήριά σας',
-    emailMessage: 'Ευχαριστούμε που επιλέξατε το AmuseApp! Απολαύστε την επίσκεψή σας με τον διαδραστικό μας οδηγό ήχου.',
-    museumName: 'Μουσείο',
-    yourTickets: 'Τα εισιτήριά σας',
-    ticketCode: 'Κωδικός',
-    qrCode: 'QR Κωδικός',
-    attachedFile: 'Συνημμένο',
-    howToUse: 'Πώς να χρησιμοποιήσετε τα εισιτήριά σας',
-    step1: 'Σαρώστε τον QR κωδικό κάθε εισιτηρίου στην είσοδο',
-    step2: 'Ανοίξτε τον οδηγό ήχου στο smartphone σας',
-    step3: 'Απολαύστε την επίσκεψή σας!',
-    emailFooter: 'Ευχαριστούμε που επιλέξατε το AmuseApp για την επίσκεψή σας!',
-    contactInfo: 'Για υποστήριξη: support@amuseapp.it',
-    emailSuccess: 'Email στάλθηκε επιτυχώς!',
-    emailError: 'Αποτυχία αποστολής email. Παρακαλώ δοκιμάστε ξανά.',
-    sendingEmail: 'Στέλνεται email...'
+    }
   },
   bn: {
     selectLanguage: 'ভাষা নির্বাচন করুন',
@@ -1287,24 +1032,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'মিউজিয়াম ID',
       confirm: 'নিশ্চিত করুন',
       cancel: 'বাতিল'
-    },
-    emailSubject: 'আপনার টিকিট',
-    emailGreeting: 'হ্যালো! এখানে আপনার টিকিট',
-    emailMessage: 'AmuseApp বেছে নেওয়ার জন্য ধন্যবাদ! আমাদের ইন্টারঅ্যাক্টিভ অডিও গাইড দিয়ে আপনার ভিজিট উপভোগ করুন।',
-    museumName: 'জাদুঘর',
-    yourTickets: 'আপনার টিকিট',
-    ticketCode: 'কোড',
-    qrCode: 'QR কোড',
-    attachedFile: 'সংযুক্তি',
-    howToUse: 'আপনার টিকিট কীভাবে ব্যবহার করবেন',
-    step1: 'প্রবেশদ্বারে প্রতিটি টিকিটের QR কোড স্ক্যান করুন',
-    step2: 'আপনার স্মার্টফোনে অডিও গাইড খুলুন',
-    step3: 'আপনার ভিজিট উপভোগ করুন!',
-    emailFooter: 'আপনার ভিজিটের জন্য AmuseApp বেছে নেওয়ার জন্য ধন্যবাদ!',
-    contactInfo: 'সহায়তার জন্য: support@amuseapp.it',
-    emailSuccess: 'ইমেইল সফলভাবে পাঠানো হয়েছে!',
-    emailError: 'ইমেইল পাঠাতে ব্যর্থ। আবার চেষ্টা করুন।',
-    sendingEmail: 'ইমেইল পাঠানো হচ্ছে...'
+    }
   },
   nl: {
     selectLanguage: 'Selecteer taal',
@@ -1342,24 +1070,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Museum ID',
       confirm: 'Bevestigen',
       cancel: 'Annuleren'
-    },
-    emailSubject: 'Uw tickets voor',
-    emailGreeting: 'Hallo! Hier zijn uw tickets',
-    emailMessage: 'Bedankt voor het kiezen van AmuseApp! Geniet van uw bezoek met onze interactieve audiogids.',
-    museumName: 'Museum',
-    yourTickets: 'Uw tickets',
-    ticketCode: 'Code',
-    qrCode: 'QR-code',
-    attachedFile: 'Bijlage',
-    howToUse: 'Hoe u uw tickets gebruikt',
-    step1: 'Scan de QR-code van elke ticket bij de ingang',
-    step2: 'Open de audiogids op uw smartphone',
-    step3: 'Geniet van uw bezoek!',
-    emailFooter: 'Bedankt voor het kiezen van AmuseApp voor uw bezoek!',
-    contactInfo: 'Voor ondersteuning: support@amuseapp.it',
-    emailSuccess: 'Email succesvol verzonden!',
-    emailError: 'Verzenden van email mislukt. Probeer opnieuw.',
-    sendingEmail: 'Email wordt verzonden...'
+    }
   },
   sq: {
     selectLanguage: 'Zgjidhni gjuhën',
@@ -1397,24 +1108,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID muzeu',
       confirm: 'Konfirmo',
       cancel: 'Anulo'
-    },
-    emailSubject: 'Biletat tuaja për',
-    emailGreeting: 'Përshëndetje! Ja biletat tuaja',
-    emailMessage: 'Faleminderit që zgjodhët AmuseApp! Gëzoni vizitën tuaj me udhëzuesin tonë interaktiv audio.',
-    museumName: 'Muzeu',
-    yourTickets: 'Biletat tuaja',
-    ticketCode: 'Kodi',
-    qrCode: 'Kodi QR',
-    attachedFile: 'Shtojcë',
-    howToUse: 'Si të përdorni biletat tuaja',
-    step1: 'Skanoni kodin QR të çdo bilete në hyrje',
-    step2: 'Hapni udhëzuesin audio në telefonin tuaj inteligjent',
-    step3: 'Gëzoni vizitën tuaj!',
-    emailFooter: 'Faleminderit që zgjodhët AmuseApp për vizitën tuaj!',
-    contactInfo: 'Për mbështetje: support@amuseapp.it',
-    emailSuccess: 'Email u dërgua me sukses!',
-    emailError: 'Dërgimi i email-it dështoi. Ju lutemi provoni përsëri.',
-    sendingEmail: 'Duke dërguar email...'
+    }
   },
   id: {
     selectLanguage: 'Pilih bahasa',
@@ -1452,24 +1146,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID Museum',
       confirm: 'Konfirmasi',
       cancel: 'Batal'
-    },
-    emailSubject: 'Tiket Anda untuk',
-    emailGreeting: 'Halo! Ini tiket Anda',
-    emailMessage: 'Terima kasih telah memilih AmuseApp! Nikmati kunjungan Anda dengan panduan audio interaktif kami.',
-    museumName: 'Museum',
-    yourTickets: 'Tiket Anda',
-    ticketCode: 'Kode',
-    qrCode: 'Kode QR',
-    attachedFile: 'Lampiran',
-    howToUse: 'Cara menggunakan tiket Anda',
-    step1: 'Pindai kode QR setiap tiket di pintu masuk',
-    step2: 'Buka panduan audio di smartphone Anda',
-    step3: 'Nikmati kunjungan Anda!',
-    emailFooter: 'Terima kasih telah memilih AmuseApp untuk kunjungan Anda!',
-    contactInfo: 'Untuk dukungan: support@amuseapp.it',
-    emailSuccess: 'Email berhasil dikirim!',
-    emailError: 'Gagal mengirim email. Silakan coba lagi.',
-    sendingEmail: 'Mengirim email...'
+    }
   },
   th: {
     selectLanguage: 'เลือกภาษา',
@@ -1507,24 +1184,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID พิพิธภัณฑ์',
       confirm: 'ยืนยัน',
       cancel: 'ยกเลิก'
-    },
-    emailSubject: 'ตั๋วของคุณสำหรับ',
-    emailGreeting: 'สวัสดี! นี่คือตั๋วของคุณ',
-    emailMessage: 'ขอบคุณที่เลือก AmuseApp! สนุกกับการเยี่ยมชมด้วยคู่มือเสียงแบบโต้ตอบของเรา',
-    museumName: 'พิพิธภัณฑ์',
-    yourTickets: 'ตั๋วของคุณ',
-    ticketCode: 'รหัส',
-    qrCode: 'QR Code',
-    attachedFile: 'ไฟล์แนบ',
-    howToUse: 'วิธีใช้ตั๋วของคุณ',
-    step1: 'สแกน QR code ของแต่ละตั๋วที่ทางเข้า',
-    step2: 'เปิดคู่มือเสียงบนสมาร์ทโฟนของคุณ',
-    step3: 'สนุกกับการเยี่ยมชม!',
-    emailFooter: 'ขอบคุณที่เลือก AmuseApp สำหรับการเยี่ยมชมของคุณ!',
-    contactInfo: 'สำหรับการสนับสนุน: support@amuseapp.it',
-    emailSuccess: 'ส่งอีเมลสำเร็จ!',
-    emailError: 'ส่งอีเมลไม่สำเร็จ กรุณาลองใหม่',
-    sendingEmail: 'กำลังส่งอีเมล...'
+    }
   },
   vi: {
     selectLanguage: 'Chọn ngôn ngữ',
@@ -1562,24 +1222,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID Bảo tàng',
       confirm: 'Xác nhận',
       cancel: 'Hủy'
-    },
-    emailSubject: 'Vé của bạn cho',
-    emailGreeting: 'Xin chào! Đây là vé của bạn',
-    emailMessage: 'Cảm ơn bạn đã chọn AmuseApp! Tận hưởng chuyến thăm với hướng dẫn âm thanh tương tác của chúng tôi.',
-    museumName: 'Bảo tàng',
-    yourTickets: 'Vé của bạn',
-    ticketCode: 'Mã',
-    qrCode: 'Mã QR',
-    attachedFile: 'Tệp đính kèm',
-    howToUse: 'Cách sử dụng vé của bạn',
-    step1: 'Quét mã QR của mỗi vé tại lối vào',
-    step2: 'Mở hướng dẫn âm thanh trên điện thoại thông minh của bạn',
-    step3: 'Tận hưởng chuyến thăm của bạn!',
-    emailFooter: 'Cảm ơn bạn đã chọn AmuseApp cho chuyến thăm của bạn!',
-    contactInfo: 'Để được hỗ trợ: support@amuseapp.it',
-    emailSuccess: 'Gửi email thành công!',
-    emailError: 'Gửi email thất bại. Vui lòng thử lại.',
-    sendingEmail: 'Đang gửi email...'
+    }
   },
   he: {
     selectLanguage: 'בחר שפה',
@@ -1617,24 +1260,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'מזהה מוזיאון',
       confirm: 'אישור',
       cancel: 'ביטול'
-    },
-    emailSubject: 'הכרטיסים שלך עבור',
-    emailGreeting: 'שלום! הנה הכרטיסים שלך',
-    emailMessage: 'תודה שבחרת ב-AmuseApp! תהנה מהביקור עם המדריך הקולי האינטראקטיבי שלנו.',
-    museumName: 'מוזיאון',
-    yourTickets: 'הכרטיסים שלך',
-    ticketCode: 'קוד',
-    qrCode: 'קוד QR',
-    attachedFile: 'קובץ מצורף',
-    howToUse: 'איך להשתמש בכרטיסים שלך',
-    step1: 'סרוק את קוד ה-QR של כל כרטיס בכניסה',
-    step2: 'פתח את המדריך הקולי בסמארטפון שלך',
-    step3: 'תהנה מהביקור!',
-    emailFooter: 'תודה שבחרת ב-AmuseApp לביקור שלך!',
-    contactInfo: 'לתמיכה: support@amuseapp.it',
-    emailSuccess: 'אימייל נשלח בהצלחה!',
-    emailError: 'שליחת האימייל נכשלה. אנא נסה שוב.',
-    sendingEmail: 'שולח אימייל...'
+    }
   },
   fa: {
     selectLanguage: 'زبان را انتخاب کنید',
@@ -1672,24 +1298,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'شناسه موزه',
       confirm: 'تأیید',
       cancel: 'لغو'
-    },
-    emailSubject: 'بلیط‌های شما برای',
-    emailGreeting: 'سلام! اینجا بلیط‌های شما هستند',
-    emailMessage: 'از انتخاب AmuseApp متشکریم! از بازدیدتان با راهنمای صوتی تعاملی ما لذت ببرید.',
-    museumName: 'موزه',
-    yourTickets: 'بلیط‌های شما',
-    ticketCode: 'کد',
-    qrCode: 'کد QR',
-    attachedFile: 'پیوست',
-    howToUse: 'نحوه استفاده از بلیط‌های شما',
-    step1: 'کد QR هر بلیط را در ورودی اسکن کنید',
-    step2: 'راهنمای صوتی را روی گوشی هوشمندتان باز کنید',
-    step3: 'از بازدیدتان لذت ببرید!',
-    emailFooter: 'از انتخاب AmuseApp برای بازدیدتان متشکریم!',
-    contactInfo: 'برای پشتیبانی: support@amuseapp.it',
-    emailSuccess: 'ایمیل با موفقیت ارسال شد!',
-    emailError: 'ارسال ایمیل ناموفق بود. لطفاً دوباره تلاش کنید.',
-    sendingEmail: 'در حال ارسال ایمیل...'
+    }
   },
   tl: {
     selectLanguage: 'Piliin ang wika',
@@ -1727,24 +1336,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Museum ID',
       confirm: 'Kumpirmahin',
       cancel: 'Kanselahin'
-    },
-    emailSubject: 'Inyong mga tiket para sa',
-    emailGreeting: 'Kumusta! Narito ang inyong mga tiket',
-    emailMessage: 'Salamat sa pagpili ng AmuseApp! Mag-enjoy sa inyong pagbisita gamit ang aming interactive audio guide.',
-    museumName: 'Museum',
-    yourTickets: 'Inyong mga tiket',
-    ticketCode: 'Kodigo',
-    qrCode: 'QR Code',
-    attachedFile: 'Kalakip',
-    howToUse: 'Paano gamitin ang inyong mga tiket',
-    step1: 'I-scan ang QR code ng bawat tiket sa entrance',
-    step2: 'Buksan ang audio guide sa inyong smartphone',
-    step3: 'Mag-enjoy sa inyong pagbisita!',
-    emailFooter: 'Salamat sa pagpili ng AmuseApp para sa inyong pagbisita!',
-    contactInfo: 'Para sa suporta: support@amuseapp.it',
-    emailSuccess: 'Matagumpay na naipadala ang email!',
-    emailError: 'Nabigo ang pagpapadala ng email. Pakisubukan ulit.',
-    sendingEmail: 'Pinapadala ang email...'
+    }
   },
   ms: {
     selectLanguage: 'Pilih bahasa',
@@ -1782,24 +1374,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID Muzium',
       confirm: 'Sahkan',
       cancel: 'Batal'
-    },
-    emailSubject: 'Tiket anda untuk',
-    emailGreeting: 'Hai! Ini tiket anda',
-    emailMessage: 'Terima kasih kerana memilih AmuseApp! Nikmati lawatan anda dengan panduan audio interaktif kami.',
-    museumName: 'Muzium',
-    yourTickets: 'Tiket anda',
-    ticketCode: 'Kod',
-    qrCode: 'Kod QR',
-    attachedFile: 'Lampiran',
-    howToUse: 'Cara menggunakan tiket anda',
-    step1: 'Imbas kod QR setiap tiket di pintu masuk',
-    step2: 'Buka panduan audio pada telefon pintar anda',
-    step3: 'Nikmati lawatan anda!',
-    emailFooter: 'Terima kasih kerana memilih AmuseApp untuk lawatan anda!',
-    contactInfo: 'Untuk sokongan: support@amuseapp.it',
-    emailSuccess: 'Email berjaya dihantar!',
-    emailError: 'Gagal menghantar email. Sila cuba lagi.',
-    sendingEmail: 'Menghantar email...'
+    }
   },
   sw: {
     selectLanguage: 'Chagua lugha',
@@ -1837,24 +1412,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ID ya Jumba la Makumbusho',
       confirm: 'Thibitisha',
       cancel: 'Ghairi'
-    },
-    emailSubject: 'Tiketi zako za',
-    emailGreeting: 'Hujambo! Hapa ni tiketi zako',
-    emailMessage: 'Asante kwa kuchagua AmuseApp! Furahia ziara yako na mwongozo wetu wa sauti wa kujumuisha.',
-    museumName: 'Jumba la Makumbusho',
-    yourTickets: 'Tiketi zako',
-    ticketCode: 'Nambari',
-    qrCode: 'Nambari za QR',
-    attachedFile: 'Kiambatisho',
-    howToUse: 'Jinsi ya kutumia tiketi zako',
-    step1: 'Changanua nambari za QR za kila tiketi mlangoni',
-    step2: 'Fungua mwongozo wa sauti kwenye simu yako ya smart',
-    step3: 'Furahia ziara yako!',
-    emailFooter: 'Asante kwa kuchagua AmuseApp kwa ziara yako!',
-    contactInfo: 'Kwa msaada: support@amuseapp.it',
-    emailSuccess: 'Barua pepe imetumwa kwa mafanikio!',
-    emailError: 'Kutuma barua pepe kumeshindwa. Tafadhali jaribu tena.',
-    sendingEmail: 'Inatumwa barua pepe...'
+    }
   },
   cs: {
     selectLanguage: 'Vyberte jazyk',
@@ -1947,24 +1505,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Museon ID',
       confirm: 'Vahvista',
       cancel: 'Peruuta'
-    },
-    emailSubject: 'Lippusi',
-    emailGreeting: 'Hei! Tässä ovat lippusi',
-    emailMessage: 'Kiitos AmuseAppin valinnasta! Nauti vierailustasi interaktiivisella ääniohjeellamme.',
-    museumName: 'Museo',
-    yourTickets: 'Lippusi',
-    ticketCode: 'Koodi',
-    qrCode: 'QR-koodi',
-    attachedFile: 'Liite',
-    howToUse: 'Kuinka käyttää lippujasi',
-    step1: 'Skannaa jokaisen lipun QR-koodi sisäänkäynnillä',
-    step2: 'Avaa ääniohje älypuhelimellasi',
-    step3: 'Nauti vierailustasi!',
-    emailFooter: 'Kiitos AmuseAppin valinnasta vierailullesi!',
-    contactInfo: 'Tukea varten: support@amuseapp.it',
-    emailSuccess: 'Sähköposti lähetetty onnistuneesti!',
-    emailError: 'Sähköpostin lähettäminen epäonnistui. Yritä uudelleen.',
-    sendingEmail: 'Lähetetään sähköpostia...'
+    }
   },
   no: {
     selectLanguage: 'Velg språk',
@@ -2002,24 +1543,7 @@ export const translations: Record<string, Translations> = {
       placeholder: 'Museum ID',
       confirm: 'Bekreft',
       cancel: 'Avbryt'
-    },
-    emailSubject: 'Dine billetter for',
-    emailGreeting: 'Hei! Her er billettene dine',
-    emailMessage: 'Takk for at du valgte AmuseApp! Nyt besøket ditt med vår interaktive lydguide.',
-    museumName: 'Museum',
-    yourTickets: 'Dine billetter',
-    ticketCode: 'Kode',
-    qrCode: 'QR-kode',
-    attachedFile: 'Vedlegg',
-    howToUse: 'Hvordan bruke billettene dine',
-    step1: 'Skann QR-koden på hver billett ved inngangen',
-    step2: 'Åpne lydguiden på smarttelefonen din',
-    step3: 'Nyt besøket ditt!',
-    emailFooter: 'Takk for at du valgte AmuseApp for besøket ditt!',
-    contactInfo: 'For støtte: support@amuseapp.it',
-    emailSuccess: 'E-post sendt vellykket!',
-    emailError: 'Kunne ikke sende e-post. Prøv igjen.',
-    sendingEmail: 'Sender e-post...'
+    }
   },
   jp: {
     selectLanguage: '言語を選択',
@@ -2057,26 +1581,27 @@ export const translations: Record<string, Translations> = {
       placeholder: 'ミュージアムID',
       confirm: '確認',
       cancel: 'キャンセル'
-    },
-    emailSubject: 'チケット',
-    emailGreeting: 'こんにちは！こちらがチケットです',
-    emailMessage: 'AmuseAppをご利用いただきありがとうございます！インタラクティブなオーディオガイドでお楽しみください。',
-    museumName: '博物館',
-    yourTickets: 'チケット',
-    ticketCode: 'コード',
-    qrCode: 'QRコード',
-    attachedFile: '添付ファイル',
-    howToUse: 'チケットの使い方',
-    step1: '入り口で各チケットのQRコードをスキャンしてください',
-    step2: 'スマートフォンでオーディオガイドを開いてください',
-    step3: 'お楽しみください！',
-    emailFooter: 'ご利用いただきありがとうございます！',
-    contactInfo: 'サポート：support@amuseapp.it',
-    emailSuccess: 'メール送信成功！',
-    emailError: 'メール送信に失敗しました。再試行してください。',
-    sendingEmail: 'メール送信中...'
+    }
   }
-}
+,
+        emailSubject: 'Seus ingressos para',
+    emailGreeting: 'Olá! Aqui estão seus ingressos',
+    emailMessage: 'Obrigado por escolher AmuseApp! Aproveite sua visita com nosso guia de áudio interativo.',
+    museumName: 'Museu',
+    yourTickets: 'Seus ingressos',
+    ticketCode: 'Código',
+    qrCode: 'QR Code',
+    attachedFile: 'Anexo',
+    howToUse: 'Como usar seus ingressos',
+    step1: 'Escaneie o código QR de cada ingresso na entrada',
+    step2: 'Abra o guia de áudio no seu smartphone',
+    step3: 'Aproveite sua visita!',
+    emailFooter: 'Obrigado por escolher AmuseApp para sua visita!',
+    contactInfo: 'Para suporte: support@amuseapp.it',
+    emailSuccess: 'Email enviado com sucesso!',
+    emailError: 'Falha ao enviar email. Tente novamente.',
+    sendingEmail: 'Enviando email...'
+  }
 
 export function getTranslation(languageCode: string): Translations {
   return translations[languageCode] || translations.en
