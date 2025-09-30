@@ -31,7 +31,7 @@ export function PageLayout({
           {title}
         </h1>
         {subtitle && (
-          <p className="text-white text-2xl">
+          <p className="text-white mb-4 text-2xl">
             {subtitle}
           </p>
         )}

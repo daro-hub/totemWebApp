@@ -46,18 +46,18 @@ export default function DonationSelectorPage() {
         title={translations.selectDonation}
         subtitle={translations.chooseDonation}
         navigation={
-          <div className="flex gap-4 w-full">
+          <div className="w-full max-w-md space-y-4">
             <Button
               onClick={handleBack}
               variant="outline"
-              className="flex-1 h-20 text-2xl font-bold border-white text-white hover:bg-white/10"
+              className="w-full h-20 text-2xl font-bold border-2 border-white bg-black hover:bg-white/10 text-white rounded-lg"
             >
               {translations.back}
             </Button>
           </div>
         }
       >
-        <div className="flex flex-col items-center justify-center gap-8 w-full max-w-4xl">
+        <div className="flex flex-col items-center justify-center gap-8 w-full max-w-md">
           {/* Predefined amounts - in a single horizontal row */}
           <div className="grid grid-cols-3 gap-6 w-full">
             {predefinedAmounts.map((amount) => (

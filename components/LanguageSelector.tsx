@@ -150,7 +150,7 @@ export function LanguageSelector() {
 
         {/* Language Grid */}
         {!isLoading && (
-          <div className="grid grid-cols-2 gap-6 w-full max-w-2xl">
+          <div className="grid grid-cols-2 gap-6 w-full mb-10 max-w-2xl">
             {availableLanguages.map((language, index) => (
               <LanguageButton
                 key={`${language.language_id}-${language.code}-${index}`}
